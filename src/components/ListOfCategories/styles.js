@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-// import { slideDown } from '../../styles/animation'
+import { slideDown } from '../../styles/animation'
 
 export const List = styled.ul`
     display: flex;
@@ -7,6 +7,7 @@ export const List = styled.ul`
     width: 100%;
     ${props => props.fixed && css`
       {
+        ${slideDown()}
         background-color: #ffffff;
         border-radius: 60px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
