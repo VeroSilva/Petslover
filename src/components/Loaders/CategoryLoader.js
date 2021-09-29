@@ -1,5 +1,5 @@
 import React from 'react'
-import ContentLoader, { Rect, Circle } from 'react-content-loader'
+import ContentLoader from 'react-content-loader'
 
 export const CategoryLoader = (props) => (
   <ContentLoader
@@ -11,7 +11,7 @@ export const CategoryLoader = (props) => (
     foregroundColor='#ececec'
     {...props}
   >
-    <Rect x='21' y='75' rx='9' ry='9' width='33' height='18' />
-    <Circle cx='38' cy='37' r='36' />
+    <rect x='21' y='75' rx='9' ry='9' width='33' height='18' />
+    <circle cx='38' cy='37' r='36' />
   </ContentLoader>
 )
