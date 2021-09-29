@@ -8,8 +8,8 @@ const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1518791841217-8f162f1e1
 
 export const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
   const [show, ref] = useNearScreen()
-  const key = `like-${id}`
-  const [liked, setLiked] = useLocalStorage(key, false)
+  const keys = `like-${id}`
+  const [liked, setLiked] = useLocalStorage(keys, false)
   const Icon = liked ? MdFavorite : MdFavoriteBorder
 
   return (
