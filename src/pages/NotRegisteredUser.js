@@ -1,10 +1,16 @@
 import React from 'react'
-// import { FavsWithQuery } from '../container/GetFavoritesWithQuery'
-// import { Layout } from '../components/Layout'
+import Context from '../Context'
 
-export default () => (
-  // <Layout title='Tus favoritos' subtitle='Aquí puedes encontrar tus favoritos'>
-  //   <FavsWithQuery />
-  // </Layout>
-  <h1>Not registered user</h1>
+import { UserForm } from '../components/UserForm'
+
+export const NotRegisteredUser = () => (
+  <Context.Consumer>
+    {
+      ({ activateAuth }) => {
+        return (
+          <UserForm onSubmit={activateAuth} />
+        )
+      }
+    }
+  </Context.Consumer>
 )
