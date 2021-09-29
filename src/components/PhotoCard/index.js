@@ -1,5 +1,4 @@
 import React from 'react'
-import { useLocalStorage } from '../../hooks/useLocalStorage'
 import { useNearScreen } from '../../hooks/useNearScreen'
 import { useToogleLikeMutation } from '../../hooks/useToogleLikeMutation'
 import { Article, ImgWrapper, Img } from './styles'
