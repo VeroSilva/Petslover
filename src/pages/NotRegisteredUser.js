@@ -8,7 +8,7 @@ import { Layout } from '../components/Layout'
 
 import { Ask } from './styles/NotRegisteredUser'
 
-export const NotRegisteredUser = () => {
+export default () => {
   const [formLogin, setformLogin] = useState(false)
   const { activateAuth } = useContext(Context)
 
