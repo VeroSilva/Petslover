@@ -4,6 +4,7 @@ import { useRegisterMutation } from '../hooks/useRegisterMutation'
 import { useLoginMutation } from '../hooks/useLoginMutation'
 
 import { UserForm } from '../components/UserForm'
+import { Layout } from '../components/Layout'
 
 import { Ask } from './styles/NotRegisteredUser'
 
@@ -52,12 +53,12 @@ export const NotRegisteredUser = () => {
   }
 
   return (
-    <>
+    <Layout title='Identifícate 🚨'>
       {
       formLogin
         ? <><LoginForm activateAuth={activateAuth} /><CallToActionRegister /></>
         : <><RegisterForm activateAuth={activateAuth} /><CallToActionLogin /></>
       }
-    </>
+    </Layout>
   )
 }
