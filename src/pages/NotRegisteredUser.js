@@ -55,9 +55,9 @@ export const NotRegisteredUser = () => {
     <>
       {
       formLogin
-        ? <><RegisterForm activateAuth={activateAuth} /><CallToActionRegister /></>
-        : <><LoginForm activateAuth={activateAuth} /><CallToActionLogin /></>
-    }
+        ? <><LoginForm activateAuth={activateAuth} /><CallToActionRegister /></>
+        : <><RegisterForm activateAuth={activateAuth} /><CallToActionLogin /></>
+      }
     </>
   )
 }
